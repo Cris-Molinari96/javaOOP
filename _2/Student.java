@@ -8,6 +8,20 @@ public class Student {
         this.name = n ;
         this.age = a ;
 
-        System.out.println("Name student:" + n + " Age student : " + a);
+        System.out.println("Name student: " + n + "\nAge student : " + a);
+    }
+    Student(String n){
+        this.name = n ;
+
+        System.out.println("Name student:" + n );
+    }
+    Student(int a){
+        this.age = a ;
+
+        System.out.println("Age student : " + a);
+    }
+    Student(){
+
+        System.out.println("0 parametri" );
     }
 }
