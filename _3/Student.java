@@ -33,7 +33,7 @@ public class Student {
             return a;
         }
         public String setCity(String city) {
-            this.city = city ;
+            this.city = city.toLowerCase() ;
             return city;
         }
 
