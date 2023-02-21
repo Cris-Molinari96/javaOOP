@@ -4,7 +4,7 @@ public class Course {
 
     String courseName ;
     String positionStudent;
-    short maxStudents;
+    int maxStudents;
     byte qualityRatingOutOf10;
     byte ageStudent;
     String students;
