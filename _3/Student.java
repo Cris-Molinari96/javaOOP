@@ -17,55 +17,46 @@ public class Student {
         Student(){
         }
 
-        public String setNameSurname(String n, String s) {
+        public void setNameSurname(String n, String s) {
             this.name = n;
             this.surname = s;
 
-            return n + s;
+            System.out.println( name + " " + surname);
         }
-        public int setAge(int a) {
+        public void setAge(int a) {
             if (a < maxAge || a < 0) {
                 System.out.println("You can't register you haven't 18+");
                 this.age = a;
             } else {
                 System.out.println("You can register, you have +18");
             }
-            return a;
+            System.out.println(age);
         }
-        public String setCity(String city) {
+        public void setCity(String city) {
             this.city = city.toLowerCase() ;
-            return city;
+            System.out.println(city);
         }
 
-        public String setCF(String n, String s) {
+        public void setCF(String n, String s) {
             this.initialCFCode = n.charAt(0) + " " + s.charAt(0);
-            return initialCFCode;
+            System.out.println(initialCFCode);
         }
 
-        public void getNameSurname(){
-            System.out.println(name + " "+ surname);
+        public String getNameSurname(){
+            return name + " " + surname;
         }
 
         public int getAge() {
-            setAge(age);
             return age;
         }
 
 
         public String getCity() {
-            if (setCity(city).contains("roma")) {
-                System.out.println("Roma 00175");
-                this.city = city;
-            } else if (setCity(city).contains("napoli")){
-                System.out.println("Napoli 80126");
-            }else {
-                System.out.println("Location unknown ");
-            }
             return  city;
         }
 
-        public void getCF() {
-            System.out.println(setCF(name,surname));
+        public String getCF() {
+          return name.charAt(0) + " " + surname.charAt(0);
         }
     }
 

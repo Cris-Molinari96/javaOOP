@@ -40,18 +40,15 @@ public class Main {
             Student newStudentA = new Student("Critian","Molinari","Via dei platani",26);
             Student newStudentB = new Student();
 
-            newStudentA.getNameSurname();
-            newStudentA.getCity();
-            newStudentA.getAge();
-            newStudentA.getCF();
+            System.out.println(newStudentA.getNameSurname());
+            System.out.println(newStudentA.getCity());
+            System.out.println(newStudentA.getAge());
+            System.out.println(newStudentA.getCF());
             System.out.println("\n");
             newStudentB.setNameSurname("Matteo","Bianchi");
-            newStudentB.getNameSurname();
             newStudentB.setCity("Napoli");
             newStudentB.setAge(15);
-            newStudentB.getCity();
-            newStudentB.getAge();
-            newStudentB.getCF();
+            System.out.println(newStudentB.getCF());
     }
         }
 
