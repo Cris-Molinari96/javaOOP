@@ -6,16 +6,17 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         exercise2();
-    /**
-     * 1: Create a new Class in this package
-     *
-     *    Call this class 'Course'
-     *
-     *    Inside add the following variables, using an appropriate type.
-     *    courseName, maxStudents, qualityRatingOutOf10
-     *
-     *    On top of this choose 2 variables of your choice!
-     */
+        exercise3();
+        /**
+         * 1: Create a new Class in this package
+         *
+         *    Call this class 'Course'
+         *
+         *    Inside add the following variables, using an appropriate type.
+         *    courseName, maxStudents, qualityRatingOutOf10
+         *
+         *    On top of this choose 2 variables of your choice!
+         */
         Course newCourse = new Course();
         newCourse.courseName = "Java OOP";
 
@@ -24,11 +25,10 @@ public class Main {
 
     /**
      * 2: use the class called 'Student', add variables
-     *    (class variables are called 'fields' or 'attributes')
-     *    called 'name' and 'age'
-     *
-     *    Using the function below set the student name and ages
-     *
+     * (class variables are called 'fields' or 'attributes')
+     * called 'name' and 'age'
+     * <p>
+     * Using the function below set the student name and ages
      */
     private static void exercise2() {
         System.out.println("Exercise 2:");
@@ -36,18 +36,17 @@ public class Main {
         List<Integer> studentAges = Arrays.asList(23, 31, 38);
 
         // Use a for i loop
-for(int i = 0 ; i < studentNames.size() && i < studentAges.size(); i++){
-    System.out.println(studentNames.get(i) + " " + studentAges.get(i));
-}
-Student studente = createNewStudent("Cristian",26);
-System.out.println(studente);
+        for (int i = 0; i < studentNames.size() && i < studentAges.size(); i++) {
+            System.out.println(studentNames.get(i) + " " + studentAges.get(i));
+        }
+        createNewStudent("Cristian", 26);
     }
-// quando chia
+
     private static Student createNewStudent(String name, Integer age) {
         // Write your code here
         Student newStudent = new Student();
-        newStudent.name = "Cristian";
-        newStudent.age = 26;
+        newStudent.setName(name);
+        newStudent.setAge(age);
         return newStudent;
     }
 
@@ -66,10 +65,8 @@ System.out.println(studente);
 
     private static void exercise3() {
         System.out.println("\nExercise 3:");
-
         // Write your code here
-
-
+        Course course = new Course();
+        course.etaMediaStudenti();
     }
-
 }
